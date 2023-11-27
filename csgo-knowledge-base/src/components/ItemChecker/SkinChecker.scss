@@ -1,0 +1,157 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/fonts" as *;
+
+.skin-checker {
+	background-color: #3a3a3a;
+}
+
+.skin-checker__container {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	margin: auto;
+	z-index: 1;
+	background-color: $primary-white;
+	margin: -4rem 2rem 0 2rem;
+
+	@include tablet {
+		margin: -6.5rem 2rem 4rem 2rem;
+	}
+
+	@include desktop {
+		margin: -7rem 8.125rem 0rem 8.125rem;
+		padding-bottom: 16.5rem;
+	}
+
+	&-titlebox {
+		display: flex;
+		flex-direction: column;
+
+		@include tablet {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		@include desktop {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	&-title {
+		padding-left: 16px;
+		font-weight: 600;
+		padding-top: 20px;
+		margin-bottom: 10px;
+
+		@include tablet {
+			padding-left: 32px;
+		}
+
+		@include desktop {
+			padding-left: 50px;
+			padding-top: 20px;
+		}
+	}
+
+	&-form {
+		display: flex;
+		flex-direction: column;
+		padding: 0px 16px 20px 16px;
+
+		@include tablet {
+			padding-top: 30px;
+			padding-right: 50px;
+			padding-bottom: 30px;
+			display: flex;
+			flex-direction: row;
+		}
+
+		@include desktop {
+			padding-top: 40px;
+			padding-right: 60px;
+			padding-bottom: 30px;
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+	&-search {
+		border-radius: 20px;
+		height: 38px;
+		border: 1px solid $secondary-light;
+		color: $secondary-dark;
+		background-image: url("../../assets/icons/search-24px.svg");
+		background-repeat: no-repeat;
+		background-position: right;
+		padding-left: 10px;
+
+		@include tablet {
+			border-radius: 20px;
+			padding-left: 15px;
+			width: 185px;
+			margin: 0;
+		}
+
+		@include desktop {
+			border-radius: 20px;
+			padding-left: 30px;
+			width: 274px;
+			margin: 0;
+		}
+	}
+
+	&-search:active {
+		border: 1px solid $primary-blue;
+	}
+
+	&-button {
+		border-radius: 20px;
+		background-color: #fb7e14;
+		color: $primary-white;
+		border: none;
+		height: 38px;
+		text-align: center;
+		margin: 15px 0px 0px 0px;
+		width: 100%;
+
+		@include tablet {
+			border-radius: 20px;
+			margin: 0px 0px 0px 20px;
+			padding: 0px 15px;
+		}
+
+		@include desktop {
+			border-radius: 20px;
+			margin: 0px 0px 0px 20px;
+			padding: 0px 15px;
+		}
+	}
+}
+
+.skin-checker__main-content {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 16px 20px 16px;
+
+	@include tablet {
+		padding-top: 30px;
+		padding-right: 50px;
+		padding-bottom: 30px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	@include desktop {
+		padding-top: 40px;
+		padding-right: 60px;
+		padding-bottom: 30px;
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.skin-checker__table-headers {
+	width: 50%;
+}

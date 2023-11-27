@@ -1,0 +1,74 @@
+.url-check {
+	padding: 20px;
+	top: 15%;
+	position: relative;
+}
+
+.url-check__container {
+	max-width: 1200px;
+	margin: 50%;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	margin: auto;
+	z-index: 1;
+	margin-top: -8rem;
+	height: 120vh;
+}
+
+.url-check__container-titlebox {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.url-check__container-title {
+	font-size: 24px;
+	margin-bottom: 10px;
+	padding-top: 45px;
+}
+
+.url-check__container-hero-form {
+	margin-top: 20px;
+}
+
+.url-check__container-FAQ-button {
+	background-color: #fb7e14;
+	color: #fff;
+	border-radius: 20px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 15px;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.url-check__FAQ-container {
+	margin-top: 30px;
+}
+
+.url-check__FAQ-card {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.url-check__FAQ-card-header {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.url-check__FAQ-card-question,
+.url-check__FAQ-card-answer {
+	margin-bottom: 15px;
+}
+
+.url-check__FAQ-card-question {
+	font-weight: bold;
+}
+
+/* Add additional styling as needed */
