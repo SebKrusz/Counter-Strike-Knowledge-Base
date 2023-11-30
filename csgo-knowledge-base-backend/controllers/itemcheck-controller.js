@@ -2,8 +2,6 @@
 
 const knex = require("knex")(require("../knexfile"));
 
-// Controller functions
-
 const getAllItemChecks = async (req, res) => {
 	try {
 		const itemChecks = await knex.select().from("itemcheck");
@@ -32,7 +30,6 @@ const getItemCheckById = async (req, res) => {
 const addItemCheck = async (req, res) => {
 	const { price_factor, weapon, skin, float, pattern, name } = req.body;
 
-	// Set default values for missing fields
 	const defaultValues = {
 		weapon: weapon || "DefaultWeapon",
 		skin: skin || "DefaultSkin",
@@ -92,10 +89,8 @@ const checkItem = async (req, res) => {
 			.first();
 
 		if (itemCheck) {
-			// Check for specific pattern values
 			if (itemCheck.pattern === 70) {
-				// Adjust the price factor for pattern 70
-				itemCheck.price_factor = itemCheck.price_factor * 1.5; // Adjust as needed
+				itemCheck.price_factor = itemCheck.price_factor * 1.5;
 				itemCheck.reason = "Pattern 70 affects the price factor.";
 			} else {
 				itemCheck.reason = "No specific adjustments for this pattern.";

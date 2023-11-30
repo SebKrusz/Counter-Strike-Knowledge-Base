@@ -8,7 +8,7 @@ function URLCheck() {
 	const [results, setResults] = useState([]);
 
 	const handleURLCheck = async (e) => {
-		e.preventDefault(); // Prevent the default form submission behavior
+		e.preventDefault();
 
 		try {
 			const response = await axios.post(
@@ -69,7 +69,6 @@ function URLCheck() {
 											}`}>
 											Status: {result.status}
 										</p>
-										{/* Apply the conditional class specifically on the Link element */}
 										<p
 											className={`url-check__container-website-info-title ${
 												result.status === "No Match"

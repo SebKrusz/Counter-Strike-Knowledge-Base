@@ -70,7 +70,7 @@ function URLCheckFAQ() {
 							platforms.
 						</p>
 						<p className="url-check__FAQ-card-question">
-							What to do if you already clicked a phising link?
+							What to do if you already clicked a phishing link?
 						</p>
 						<p className="url-check__FAQ-card-answer">
 							If you suspect a security threat, take immediate

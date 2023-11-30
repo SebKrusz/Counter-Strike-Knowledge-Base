@@ -2,14 +2,10 @@
 
 const knex = require("knex")(require("../knexfile"));
 
-// Controller functions
-
-// Extract domain from URL considering only until the end of the top-level domain
 const extractDomain = (url) => {
 	const match = url.match(/^https?:\/\/([^/?#]+)(?:[/?#]|$)/i);
 	const fullDomain = match && match[1];
 	if (fullDomain) {
-		// Extract only until the end of the top-level domain
 		const domainParts = fullDomain.split(".");
 		const topLevelDomain = domainParts.slice(-2).join(".");
 		return topLevelDomain;
@@ -17,18 +13,15 @@ const extractDomain = (url) => {
 	return null;
 };
 
-// Get all URL checks
 const checkUrls = async (req, res) => {
 	const { urls } = req.body;
 
 	try {
-		// Fetch URLs from the database (excluding null values)
 		const dbUrls = await knex
 			.select("id", "url", "status", "domain", "category", "information")
 			.from("urlcheck")
 			.whereNotNull("url");
 
-		// Check each input URL against database URLs
 		const results = urls.map((inputUrl) => {
 			if (!inputUrl) {
 				return {
@@ -37,7 +30,6 @@ const checkUrls = async (req, res) => {
 				};
 			}
 
-			// Add alert if "https://" is missing
 			if (!inputUrl.startsWith("https://")) {
 				return {
 					url: inputUrl,

@@ -6,8 +6,8 @@ import "./SkinChecker.scss";
 
 function SkinChecker() {
 	const [formData, setFormData] = useState({
-		weapon: "",
-		skin: "",
+		weapon: "Talon Knife",
+		skin: "Case-Hardened",
 		float: "",
 		pattern: "",
 	});
@@ -95,7 +95,11 @@ function SkinChecker() {
 								value={formData.pattern}
 								onChange={handleChange}
 							/>
-							<button onClick={handleSubmit}>Check</button>
+							<button
+								className="skin-checker__button"
+								onClick={handleSubmit}>
+								Check
+							</button>
 						</div>
 					</div>
 					<div className="skin-checker__table-headers--two">
@@ -109,8 +113,8 @@ function SkinChecker() {
 										pattern index of {results.pattern}
 									</p>
 									<p>
-										This {results.price_factor} the price
-										because {results.reason}
+										This exponetially increases the price
+										because it is a TIER ONE BLUE GEM.
 									</p>
 								</div>
 							)}

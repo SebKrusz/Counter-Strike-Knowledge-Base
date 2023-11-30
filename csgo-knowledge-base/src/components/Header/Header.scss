@@ -22,6 +22,9 @@
 	}
 
 	&__box {
+		display: inline-flex;
+		color: #fb7e14;
+		font-size: 16px;
 		&-logo {
 			display: flex;
 			justify-content: center;
@@ -97,4 +100,9 @@
 			}
 		}
 	}
+}
+.header__logo-text {
+	position: absolute;
+	left: 8%;
+	top: 1%;
 }

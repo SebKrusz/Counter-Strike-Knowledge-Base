@@ -9,7 +9,7 @@ function ItemFAQ() {
 			<div className="url-check__container">
 				<div className="url-check__container-titlebox">
 					<h1 className="url-check__container-title">
-						How to use / Purpose For Counter-Strike Item Knowledge
+						How to use / Purpose For Counter-Strike Item Checker
 					</h1>
 					<form className="url-check__container-hero-form">
 						<Link to="/Skincheck">

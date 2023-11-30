@@ -18,6 +18,7 @@ const Header = () => {
 						<img src={InstockLogo} alt="Instock Logo"></img>
 					</div>
 				</Link>
+				<h1 className="header__logo-text">CSKB</h1>
 			</div>
 			<nav className="header__container">
 				<ul className="header__container-nav">

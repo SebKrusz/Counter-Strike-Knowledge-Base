@@ -142,7 +142,7 @@
 
 		@include desktop {
 			display: grid;
-			grid-template-columns: [first] 18.5% [line2] 18.5% [line3] 48% [line4] 0% [line5] 31%[col4-start] 15%;
+			grid-template-columns: [first] 18.5% [line2] 18.5% [line3] 48% [line4] 0% [line5] 21%;
 			padding-left: 63px;
 			background-color: $background-light;
 		}

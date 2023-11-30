@@ -155,3 +155,97 @@
 .skin-checker__table-headers {
 	width: 50%;
 }
+
+.skin-checker__item-select {
+	border-radius: 20px;
+	height: 38px;
+	border: 1px solid $secondary-light;
+	color: $secondary-dark;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-left: 10px;
+
+	@include tablet {
+		border-radius: 20px;
+		padding-left: 15px;
+		width: 185px;
+		margin: 0;
+	}
+
+	@include desktop {
+		border-radius: 20px;
+		padding-left: 30px;
+		width: 274px;
+		margin: 0;
+	}
+}
+
+.skin-checker__item-float-input {
+	border-radius: 20px;
+	height: 28px;
+	border: 1px solid $secondary-light;
+	color: $secondary-dark;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-left: 10px;
+
+	@include tablet {
+		border-radius: 20px;
+		padding-left: 15px;
+		width: 185px;
+		margin: 0;
+	}
+
+	@include desktop {
+		border-radius: 20px;
+		padding-left: 30px;
+		width: 274px;
+		margin: 0;
+	}
+}
+
+.skin-checker__item-pattern-input {
+	border-radius: 20px;
+	height: 28px;
+	border: 1px solid $secondary-light;
+	color: $secondary-dark;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-left: 10px;
+
+	@include tablet {
+		border-radius: 20px;
+		padding-left: 15px;
+		width: 185px;
+		margin: 0;
+	}
+
+	@include desktop {
+		border-radius: 20px;
+		padding-left: 30px;
+		width: 274px;
+		margin: 0;
+	}
+}
+
+.skin-checker__button {
+	border-radius: 20px;
+	background-color: #fb7e14;
+	color: $primary-white;
+	border: none;
+	height: 38px;
+	text-align: center;
+	margin: 15px 0px 0px 0px;
+
+	@include tablet {
+		border-radius: 20px;
+		margin: 0px 0px 0px 20px;
+		padding: 0px 15px;
+	}
+
+	@include desktop {
+		border-radius: 20px;
+		margin: 0px 0px 0px 20px;
+		padding: 0px 15px;
+	}
+}
