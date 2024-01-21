@@ -2,6 +2,9 @@
 
 Welcome to the Counter-Strike Knowledge Base project! This platform is designed to empower gamers by providing a comprehensive set of tools for safe and informed Counter-Strike trading. Whether you're checking links, analyzing in-game items, or seeking influencers and websites, our knowledge base has you covered.
 
+### IMAGES:
+https://imgur.com/a/8EFTWso
+
 ## Features
 
 ### Link Checker
